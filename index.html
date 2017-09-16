@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,15 +21,15 @@
     <div class="container">
       <div class="header clearfix">
         <nav>
-          <ul class="nav nav-pills float-right">
+          <ul class="nav nav-pills float-right mx-sm-auto p-2">
             <li class="nav-item">
-              <a class="nav-link active" href="#">All <span class="sr-only">(current)</span></a>
+              <button type="button" id="all-users" class="btn btn-primary all-users">All</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ONLINE</a>
+              <button type="button" class="btn btn-success online-users">ONLINE</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">OFFLINE</a>
+              <button type="button" class="btn btn-warning offline-users">OFFLINE</button>
             </li>
           </ul>
         </nav>
@@ -38,32 +37,14 @@
       </div>
 
       <div class="jumbotron">
-        <img src="http://cdn.embed.ly/providers/logos/twitchtv.png">
+        <img class="img-fluid" src="http://cdn.embed.ly/providers/logos/twitchtv.png" alt="twitch logo">
+        <br><br>
+        <input type="search" class="search-twitch" id="search" width="5rem" placeholder="Search Username" autofocus><button type="button" class="btn-sm btn-success search-twitch-btn" onclick="search();">Search</button></input>
       </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+       
+      <section class="online"></section>
+      <section class="offline"></section>
+      <section class="unavailable"></section>
 
       <footer class="footer">
         <p>&copy; Sujeevan 2017</p>
@@ -78,5 +59,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Core JavaScript file -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
