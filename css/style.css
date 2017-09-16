@@ -1,3 +1,99 @@
 .jumbotron {
   border-radius: 1.5rem;
 }
+
+.btn {
+	margin-right: 0.5rem;
+}
+
+.status {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef; }
+
+
+.online .twitch {
+  background-color: #2ECC71; 
+}
+
+.offline .twitch {
+  background-color: #F1C40F; 
+}
+
+.unavailable .twitch {
+  background-color: #3498DB; 
+}
+
+.twitch {
+  text-align: left;
+  margin-top: 0.2em;
+  background-color: #efefef;
+  line-height: 70px; 
+}
+
+.image-holder {
+  width: 55px;
+  height: 55px;
+  margin: 7.5px 0 7.5px 30px;
+
+
+  border: 1px solid #222;
+  float: left;
+  background: url("https://cdn.rawgit.com/ayoisaiah/freeCodeCamp/master/twitch/images/placeholder-2.jpg");
+  background-size: cover;
+  border-radius: 50%; 
+  padding: 1rem;
+}
+
+.status-message {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+}
+
+a {
+  text-decoration: none;
+  color: #196090; 
+}
+
+a:hover {
+  color: #196090;
+  text-decoration: underline; 
+}
+
+.hidden {
+  display: none; 
+}
+
+.focus {
+  background-color: #7550BA;
+  color: #fff; 
+}
+
+.focus:hover, .focus:focus {
+  color: #fff; 
+}
+
+@media screen and (max-width: 550px) {
+  .headline {
+    text-align: center; 
+}
+
+  .search {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+  .twitch {
+    text-align: center; 
+}
+
+  .image-holder {
+    margin: 7.5px auto 5px;
+    float: none; 
+}
+
+  span {
+    padding: 10px 10px; 
+}
